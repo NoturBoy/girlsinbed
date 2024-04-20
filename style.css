@@ -105,7 +105,7 @@ border: 0px solid #292929;
 .boddbtno {text-align:center;color:#fff !important;list-style:none;margin-left:0px !important;padding:10px !important;font-size:12px;display:inline-block;text-decoration:none !important;clear:both;}
 .boddbtno ul {padding:0;margin:0;}
 .boddbtno li {list-style:none;display:inline;padding:0;margin:5px;}
-.downloadbtno{background:#fff;color: #ec008c; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; !important;padding:10px 10px 10px 10px;font-size:6px;font-weight:600;text-transform:uppercase;text-align:center;border-radius:15px;border:0;letter-spacing:1px;transition: all 0.2s ease-out;text-decoration:none !important;}
+.downloadbtno{background:#fff;color: #ec008c; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; !important;padding:10px 10px 10px 10px;font-size:8px;font-weight:600;text-transform:uppercase;text-align:center;border-radius:15px;border:0;letter-spacing:1px;transition: all 0.2s ease-out;text-decoration:none !important;}
 .downloadbtno {background:#fff}
 .downloadbtno:hover {background:#fff;color: #fc6767;}
 
