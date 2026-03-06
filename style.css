@@ -1,216 +1,56 @@
-body {
-    padding: 0px;
-    margin: 0px;
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmhduz8A.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
-
-header {
-    position: relative;
-    background-color: black;
-    height: 100vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwkxduz8A.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-
-
-.hour{
-    margin-top: 1px;
-	color: green;
-	font-size: 12px;
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmxduz8A.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
 }
-
-.ratings i{
-text-align: center;
-	color: #ffda24;
+/* greek */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlBduz8A.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
 }
-
-html, body { padding: 0; margin: 0; }
-
-header video {
-position: absolute;
-top: 50%;
-left: 50%;
-min-width: 100%;
-min-height: 100%;
-width: auto;
-height: 100%;
-z-index: 0;
--ms-transform: translateX(-50%) translateY(-50%);
--moz-transform: translateX(-50%) translateY(-50%);
--webkit-transform: translateX(-50%) translateY(-50%);
-transform: translateX(-50%) translateY(-50%);
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmBduz8A.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
 }
-  
-header .container {
-position: relative;
-z-index: 2;
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmRduz8A.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
-header .overlay {
-position: absolute;
-top: 0;
-left: 0;
-height: 100%;
-width: 100%;
-background-color: black;
-opacity: 0.4;
-z-index: 1;
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
-header video {
-    /* display: none; */
-}
-/*style untuk popup */
-#popup {
-width:80%;
-min-width: 100%;
-min-height: 100%;
-z-index:1000;
-background-color: rgba(0,0,0,0.0);
-position: fixed;
-top:0;
-left:0;
-right:0;
-bottom:0;
-margin:0;
-}
-#popup:target {
-opacity: 0;
-visibility: hidden;
-}@media {
-.popup-container{
-
-}
-}
-@media {
-.popup-container{
-
-}
-}
-.popup-container {
-  justify-content: center;
-  align-items: center;
-bottom:100px;
-width:80%;
-margin-left:10%;
-margin-right:10%;
-position: fixed;
-padding:10px 20px;
-border-radius: 15px;
-background:  rgba(0,0,0,0.0);
-color:#fff;
-border: 0px solid #292929;
-}
-
-.boddbtno {text-align:center;color:#fff !important;list-style:none;margin-left:0px !important;padding:15px !important;font-size:12px;display:inline-block;text-decoration:none !important;clear:both;}
-.boddbtno ul {padding:0;margin:0;}
-.boddbtno li {list-style:none;display:inline;padding:0;margin:5px;}
-.downloadbtno{background:#fff;color: #ec008c; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; !important;padding:10px 15px 10px 15px;font-size:15px;font-weight:700;text-transform:uppercase;text-align:center;border-radius:15px;border:0;letter-spacing:1px;transition: all 0.2s ease-out;text-decoration:none !important;}
-.downloadbtno {background:#fff}
-.downloadbtno:hover {background:#fff;color: #fc6767;}
-
-.fir-clickcircle {
-  border: 2px solid #ec008c;
-  height: 45px;
-margin: 3px;
-  width: 45px;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-.fir-image-figure {
-justify-content: center;
-  margin-top: 5px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px;
-  position: relative;
-  text-decoration: none;
-
-}
-
-.fir-image-figure .caption, .fir-image-figure figcaption {
-  padding-left: 15px;
-}
-
-html.wf-active .fir-image-figure .fig-author-figure-title {
-  font-family: var(--fir-font-header);
-font-weight: 400;
-  font-size: 15px;
-color: #fff;
-}
-
-.fir-image-figure .fig-author-figure-title-nama {
-  color: var(--fir-color-grey);
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 500;
-  font-size: 17px;
-  margin-left: 15px;
-margin-top: 5px;
-margin-bottom: 5px;
-color: #fff;
-}
-
-.fir-image-figure .fig-author-figure-title {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  margin-left: 15px;
-color: #fff;
-}
-
-.fir-imageover {
-  position: relative;
-  display: flex;
-}
-
-.fir-imageover-color {
-  height: 80px;
-  width: 80px;
-  
-  background: var(--fir-blue-twitter-alpha);
-  background-image: none;
-position: absolute;
-  border-radius: 100px;
-  top: 0;
-  left: 0;
-}
-
-.fir-imageover-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: fadeInFadeOut 2s infinite;
-}
-
-.loader {
-  display: inline-block;
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  color: #FFF;
-  position: relative;
-}
-
-.loader::before {
-  content: '';  
-  position: absolute;
-  left: 0px;
-  bottom: 5px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 5px solid #ffa8dc;
-  border-bottom-color: #ec008c;
-  box-sizing: border-box;
-  animation: rotation 0.6s linear infinite;
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-} 
