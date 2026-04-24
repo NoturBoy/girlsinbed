@@ -1,6 +1,165 @@
-<script type="text/javascript">  
-from = document.referrer;   
-if (from === "facebook.com", "twitter.com", "google.com") {  
-window.location = "https://www.liveroomcam.com/?utm_source=da57dc555e50572d&&ban=fb&s1=232783&s2=2110365&click_id=EMINEMM+&j6=1"  
-}  
-</script> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Private Room</title>
+
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#000;
+  color:white;
+  overflow:hidden;
+}
+
+/* VIDEO BACKGROUND */
+video {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:0.4;
+  z-index:-1;
+}
+
+/* HEADER */
+.header {
+  background:#075E54;
+  padding:15px;
+  font-size:16px;
+}
+
+/* CONTENT */
+.container {
+  text-align:center;
+  margin-top:60px;
+}
+
+.circle {
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  background:#25D366;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:auto;
+  font-size:30px;
+}
+
+.title {
+  font-size:22px;
+  margin-top:15px;
+}
+
+.admin {
+  font-size:13px;
+  color:#ccc;
+}
+
+.stats {
+  margin-top:20px;
+  font-size:18px;
+}
+
+.online {
+  color:#25D366;
+}
+
+/* INFO BOX */
+.info {
+  margin:20px auto;
+  background:rgba(255,255,255,0.15);
+  padding:12px;
+  border-radius:10px;
+  font-size:12px;
+  width:85%;
+}
+
+/* BUTTON */
+.btn {
+  display:inline-block;
+  background:#25D366;
+  padding:14px 40px;
+  border-radius:25px;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  margin-top:15px;
+  animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {transform:scale(1);}
+  50% {transform:scale(1.05);}
+  100% {transform:scale(1);}
+}
+
+.footer {
+  font-size:11px;
+  color:#aaa;
+  margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- VIDEO -->
+<video autoplay muted loop playsinline id="bg">
+  <source src="pp.mp4" type="video/mp4">
+</video>
+
+<div class="header">
+  ← Private Room
+</div>
+
+<div class="container">
+
+  <div class="circle">👥</div>
+
+  <div class="title">Private Girls Room</div>
+  <div class="admin">Admin: Emily</div>
+
+  <div class="stats">
+    120K Members
+    <br><br>
+    <span class="online" id="online">48K</span> Online
+  </div>
+
+  <div class="info">
+    🔒 Preview only — continue to access full chat
+  </div>
+
+  <!-- LINK KAMU -->
+  <a href="https://www.liveroomcam.com/?utm_source=da57dc555e50572d&&ban=fb&s1=232783&s2=2110365&click_id=EMINEM+&j6=1" class="btn">
+    Join Now
+  </a>
+
+  <div class="footer">Secure Access</div>
+
+</div>
+
+<script>
+
+// AUTOPLAY FIX
+document.body.addEventListener("click", () => {
+  document.getElementById("bg").play();
+});
+
+// FAKE ONLINE COUNT
+let online = 48000;
+
+setInterval(() => {
+  online += Math.floor(Math.random()*3);
+  document.getElementById("online").innerText = Math.floor(online/1000) + "K";
+}, 2000);
+
+</script>
+
+</body>
+</html>
